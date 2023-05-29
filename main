@@ -1,0 +1,66 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <time.h>
+
+int main()
+{
+    //bibibliotecas
+    setlocale(LC_ALL, "portuguese");
+    srand(time(NULL));
+
+    //variaveis
+    int numA1 = rand() % 10 + 1;
+    int numA2 = rand() % 10 + 1;
+    int tema = numA1;
+    int opcoes
+    //array
+
+    char matriz [10][10][20] = {
+        {"gato", "peixe", "cachorro", "cavalo", "vaca", "urubu", "elefante", "lobo", "girafa", "hipopótamo"},
+        {"cachoeira", "salvador", "palmas", "paris", "recife", "petrolina", "Viana", "londres", "brasíllia", "budapeste"},
+        {"azul", "amarelo", "verde", "vermelho", "laranja", "branco", "preto", "cinza", "marrom", "rosa"},
+        {"pizza", "hamburguer", "sanduíche", "cuscuz", "pipoca", "acarajé", "açaí", "lasanha", "panqueca", "yakisoba"},
+        {"melão", "banana", "maçã", "uva", "goiaba", "acerola", "laranja", "coco", "melancia", "abacate"},
+        {"facebook", "instagram", "twitter", "whatsapp", "google", "duolingo", "tinder", "pinterest", "youtube", "tiktok"},
+        {"thor", "kingsman", "batman", "avatar", "matrix", "interstelar", "deadpool", "vingadores", "rocky", "gladiador"},
+        {"simpsons", "vikings", "supernatural", "sherlock", "friends", "flash", "supergirl", "smallville", "mandalorian", "arcane"},
+        {"mário", "pou", "lol", "minecraft", "gta", "cod", "asphalt", "black", "fifa", "bullying"},
+        {"gol", "siena", "corsa", "opala", "duster", "camaro", "civic", "corola", "golf", "uno"}
+    };
+    //texto gigante
+    system("color a");
+    printf("   _                       _        __                     \n");
+    printf("  (_)                     | |      / _|                    \n");
+    printf("   _  ___   __ _  ___   __| | __ _| |_ ___  _ __ ___ __ _  \n");
+    printf("  | |/ _ \\ / _` |/ _ \\ / _` |/ _` |  _/ _ \\| '__/ __/ _` | \n");
+    printf("  | | (_) | (_| | (_) | (_| | (_| | || (_) | | | (_| (_| | \n");
+    printf("  | |\\___/ \\__, |\\___/ \\__,_|\\__,_|_| \\___/|_|  \\___\\__,_| \n");
+    printf(" _/ |       __/ |                                          \n");
+    printf("|__/       |___/                                           \n");
+
+    printf("\n Escolha um tema\
+           \n 1-Animal \
+           \n 2-Cor \
+           \n 3-carro\
+           \n 4-cidade\
+           \n 5-comida\
+           \n 6-fruta\
+           \n 7-aplicativo\
+           \n 8-filmes\
+           \n 9-série\
+           \n 10-jogos\
+           \n 11-sair\n");
+           
+    scanf("%d", &opcoes);
+    
+    switch(opcoes{
+       case 1:
+        printf("ANIMAL\n);
+        
+        printf("Digite uma letra");}
+           
+    
+           
+    return 0;
+}
