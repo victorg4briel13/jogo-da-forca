@@ -1,0 +1,62 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <string.h>
+
+int main()
+{
+    //variaveis////////////
+    int opcao;
+    int tamanho = 0;
+    //----------------
+    char matrizNome[100][20];
+    char nome[20];
+    //----------------
+    char matrizNum[100][20];
+    char numero[20];
+    //////////////////////
+
+    //biblioteca
+    setlocale(LC_ALL, "portuguese");
+
+    //texto
+    printf("-LISTA  TELEFÔNICA-\
+           \n\
+           \n[1] Ver lista\
+           \n[2] Adicionar contato \
+           \n[3] Remover contato \
+           \n[4] Sair\
+           \n>>");
+    scanf("%d",&opcao);
+
+    //switch case
+    switch(opcao){
+        case 1:
+            printf("LISTA\n");
+
+        break;
+        //////////////////////////
+        case 2:
+            system("cls");
+            printf("ADICIONAR CONTATO \n");
+            printf("\nDigite o nome>>");
+            scanf(" %s", nome);
+            printf("Digite o número>>");
+            scanf(" %s", &numero);
+            strcpy(matrizNome[tamanho], nome);
+            strcpy(matrizNum[tamanho], numero);
+            printf(" %s, %s",matrizNome[tamanho], matrizNum[tamanho]);
+            tamanho++;
+
+        break;
+        //////////////////////////
+        case 3:
+            printf("3 \n");
+        break;
+        /////////////////////////
+        case 4:
+            printf("4 \n");
+        break;
+    }
+    return 0;
+}
